@@ -1,6 +1,11 @@
-export const thunk = ({dispatch, getState}) => (next) => (action) => {
+export const thunk = ({dispatch}) => (next) => (action) => {
   if (typeof action === 'function') {
-    return action(dispatch, getState);
+    // ACTION
+    // (dispatch) => (
+    //   APIUtil.fetchAllPokemon()
+    //     .then(pokemon => dispatch(receiveAllPokemon(pokemon)))
+    // );
+    return action(dispatch); // where the ajax request happens
   } else {
     return next(action);
   }

@@ -100,13 +100,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "requestAllPokemon", function() { return requestAllPokemon; });
 /* harmony import */ var _util_api_util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../util/api_util */ "./app/frontend/util/api_util.js");
 
-var RECEIVE_ALL_POKEMON = 'RECEIVE_ALL_POKEMON';
+var RECEIVE_ALL_POKEMON = 'RECEIVE_ALL_POKEMON'; //action creator. when invoked, gives you an action (POJO)
+
 var receiveAllPokemon = function receiveAllPokemon(pokemon) {
   return {
     type: RECEIVE_ALL_POKEMON,
     pokemon: pokemon
   };
-};
+}; // Also an action creator, but more like "thunk action creators". Returns an
+// action thats a function
+
 var requestAllPokemon = function requestAllPokemon() {
   return function (dispatch) {
     return _util_api_util__WEBPACK_IMPORTED_MODULE_0__["fetchAllPokemon"]().then(function (pokemon) {
@@ -129,12 +132,16 @@ window.requestAllPokemon = requestAllPokemon;
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "thunk", function() { return thunk; });
 var thunk = function thunk(_ref) {
-  var dispatch = _ref.dispatch,
-      getState = _ref.getState;
+  var dispatch = _ref.dispatch;
   return function (next) {
     return function (action) {
       if (typeof action === 'function') {
-        return action(dispatch, getState);
+        // ACTION
+        // (dispatch) => (
+        //   APIUtil.fetchAllPokemon()
+        //     .then(pokemon => dispatch(receiveAllPokemon(pokemon)))
+        // );
+        return action(dispatch); // where the ajax request happens
       } else {
         return next(action);
       }
@@ -160,6 +167,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _util_api_util__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./util/api_util */ "./app/frontend/util/api_util.js");
 /* harmony import */ var _actions_pokemon_actions__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./actions/pokemon_actions */ "./app/frontend/actions/pokemon_actions.js");
 /* harmony import */ var _store_store__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./store/store */ "./app/frontend/store/store.js");
+/* harmony import */ var _reducers_selectors__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./reducers/selectors */ "./app/frontend/reducers/selectors.js");
+
 
 
 
@@ -242,6 +251,23 @@ var rootReducer = Object(redux__WEBPACK_IMPORTED_MODULE_0__["combineReducers"])(
   entities: _entities_reducer__WEBPACK_IMPORTED_MODULE_1__["entitiesReducer"]
 });
 /* harmony default export */ __webpack_exports__["default"] = (rootReducer);
+
+/***/ }),
+
+/***/ "./app/frontend/reducers/selectors.js":
+/*!********************************************!*\
+  !*** ./app/frontend/reducers/selectors.js ***!
+  \********************************************/
+/*! exports provided: selectAllPokemon */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "selectAllPokemon", function() { return selectAllPokemon; });
+var selectAllPokemon = function selectAllPokemon(state) {
+  return Object.values(state.entities.pokemon);
+};
+window.selectAllPokemon = selectAllPokemon;
 
 /***/ }),
 
