@@ -126,9 +126,65 @@ window.requestAllPokemon = requestAllPokemon;
   !*** ./app/frontend/components/pokemon/pokemon_index.jsx ***!
   \***********************************************************/
 /*! exports provided: default */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /Users/appacademy/Desktop/W7D3/pokedex/app/frontend/components/pokemon/pokemon_index.jsx: Unexpected token (17:9)\n\n\u001b[0m \u001b[90m 15 | \u001b[39m          \u001b[90m// {this.props.pokemon.map(pokemon => (\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 16 | \u001b[39m          \u001b[90m//   <PokemonIndexItem key={pokemon.id} pokemon={pokemon} />))}\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 | \u001b[39m        \u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mul\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    | \u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 18 | \u001b[39m      \u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mdiv\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 19 | \u001b[39m    )\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 20 | \u001b[39m  }\u001b[0m\n    at _class.raise (/Users/appacademy/Desktop/W7D3/pokedex/node_modules/@babel/parser/lib/index.js:4028:15)\n    at _class.unexpected (/Users/appacademy/Desktop/W7D3/pokedex/node_modules/@babel/parser/lib/index.js:5359:16)\n    at _class.jsxParseIdentifier (/Users/appacademy/Desktop/W7D3/pokedex/node_modules/@babel/parser/lib/index.js:3504:14)\n    at _class.jsxParseNamespacedName (/Users/appacademy/Desktop/W7D3/pokedex/node_modules/@babel/parser/lib/index.js:3514:23)\n    at _class.jsxParseElementName (/Users/appacademy/Desktop/W7D3/pokedex/node_modules/@babel/parser/lib/index.js:3525:23)\n    at _class.jsxParseOpeningElementAt (/Users/appacademy/Desktop/W7D3/pokedex/node_modules/@babel/parser/lib/index.js:3610:24)\n    at _class.jsxParseElementAt (/Users/appacademy/Desktop/W7D3/pokedex/node_modules/@babel/parser/lib/index.js:3643:33)\n    at _class.jsxParseElement (/Users/appacademy/Desktop/W7D3/pokedex/node_modules/@babel/parser/lib/index.js:3712:19)\n    at _class.parseExprAtom (/Users/appacademy/Desktop/W7D3/pokedex/node_modules/@babel/parser/lib/index.js:3719:21)\n    at _class.parseExprSubscripts (/Users/appacademy/Desktop/W7D3/pokedex/node_modules/@babel/parser/lib/index.js:6081:21)\n    at _class.parseMaybeUnary (/Users/appacademy/Desktop/W7D3/pokedex/node_modules/@babel/parser/lib/index.js:6060:21)\n    at _class.parseExprOps (/Users/appacademy/Desktop/W7D3/pokedex/node_modules/@babel/parser/lib/index.js:5945:21)\n    at _class.parseMaybeConditional (/Users/appacademy/Desktop/W7D3/pokedex/node_modules/@babel/parser/lib/index.js:5917:21)\n    at _class.parseMaybeAssign (/Users/appacademy/Desktop/W7D3/pokedex/node_modules/@babel/parser/lib/index.js:5864:21)\n    at _class.parseParenAndDistinguishExpression (/Users/appacademy/Desktop/W7D3/pokedex/node_modules/@babel/parser/lib/index.js:6676:28)\n    at _class.parseExprAtom (/Users/appacademy/Desktop/W7D3/pokedex/node_modules/@babel/parser/lib/index.js:6450:21)\n    at _class.parseExprAtom (/Users/appacademy/Desktop/W7D3/pokedex/node_modules/@babel/parser/lib/index.js:3724:52)\n    at _class.parseExprSubscripts (/Users/appacademy/Desktop/W7D3/pokedex/node_modules/@babel/parser/lib/index.js:6081:21)\n    at _class.parseMaybeUnary (/Users/appacademy/Desktop/W7D3/pokedex/node_modules/@babel/parser/lib/index.js:6060:21)\n    at _class.parseExprOps (/Users/appacademy/Desktop/W7D3/pokedex/node_modules/@babel/parser/lib/index.js:5945:21)\n    at _class.parseMaybeConditional (/Users/appacademy/Desktop/W7D3/pokedex/node_modules/@babel/parser/lib/index.js:5917:21)\n    at _class.parseMaybeAssign (/Users/appacademy/Desktop/W7D3/pokedex/node_modules/@babel/parser/lib/index.js:5864:21)\n    at _class.parseFunctionBody (/Users/appacademy/Desktop/W7D3/pokedex/node_modules/@babel/parser/lib/index.js:7122:24)\n    at _class.parseArrowExpression (/Users/appacademy/Desktop/W7D3/pokedex/node_modules/@babel/parser/lib/index.js:7083:10)\n    at _class.parseExprAtom (/Users/appacademy/Desktop/W7D3/pokedex/node_modules/@babel/parser/lib/index.js:6397:18)\n    at _class.parseExprAtom (/Users/appacademy/Desktop/W7D3/pokedex/node_modules/@babel/parser/lib/index.js:3724:52)\n    at _class.parseExprSubscripts (/Users/appacademy/Desktop/W7D3/pokedex/node_modules/@babel/parser/lib/index.js:6081:21)\n    at _class.parseMaybeUnary (/Users/appacademy/Desktop/W7D3/pokedex/node_modules/@babel/parser/lib/index.js:6060:21)\n    at _class.parseExprOps (/Users/appacademy/Desktop/W7D3/pokedex/node_modules/@babel/parser/lib/index.js:5945:21)\n    at _class.parseMaybeConditional (/Users/appacademy/Desktop/W7D3/pokedex/node_modules/@babel/parser/lib/index.js:5917:21)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _pokemon_index_container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pokemon_index_container */ "./app/frontend/components/pokemon/pokemon_index_container.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+var PokemonIndex =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(PokemonIndex, _React$Component);
+
+  function PokemonIndex() {
+    _classCallCheck(this, PokemonIndex);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(PokemonIndex).apply(this, arguments));
+  }
+
+  _createClass(PokemonIndex, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      this.props.requestAllPokemon();
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, this.props.pokemon.map(function (pokemon) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, pokemon.name, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          src: pokemon.image_url
+        }));
+      })));
+    }
+  }]);
+
+  return PokemonIndex;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (PokemonIndex);
 
 /***/ }),
 
@@ -194,7 +250,7 @@ var Root = function Root(_ref) {
   var store = _ref.store;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_redux__WEBPACK_IMPORTED_MODULE_1__["Provider"], {
     store: store
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["HashRouter"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_pokemon_pokemon_index_container__WEBPACK_IMPORTED_MODULE_2__["default"], null), "// ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["HashRouter"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
     path: "/",
     component: _pokemon_pokemon_index_container__WEBPACK_IMPORTED_MODULE_2__["default"]
   })));
@@ -252,6 +308,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _store_store__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./store/store */ "./app/frontend/store/store.js");
 /* harmony import */ var _reducers_selectors__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./reducers/selectors */ "./app/frontend/reducers/selectors.js");
 /* harmony import */ var _components_root__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/root */ "./app/frontend/components/root.jsx");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+
 
 
 
