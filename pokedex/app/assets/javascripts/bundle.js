@@ -430,11 +430,41 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "entitiesReducer", function() { return entitiesReducer; });
 /* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
 /* harmony import */ var _pokemon_reducer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pokemon_reducer */ "./app/frontend/reducers/pokemon_reducer.js");
+/* harmony import */ var _items_reducer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./items_reducer */ "./app/frontend/reducers/items_reducer.js");
+
 
 
 var entitiesReducer = Object(redux__WEBPACK_IMPORTED_MODULE_0__["combineReducers"])({
-  pokemon: _pokemon_reducer__WEBPACK_IMPORTED_MODULE_1__["pokemonReducer"]
+  pokemon: _pokemon_reducer__WEBPACK_IMPORTED_MODULE_1__["pokemonReducer"],
+  items: _items_reducer__WEBPACK_IMPORTED_MODULE_2__["itemsReducer"]
 });
+
+/***/ }),
+
+/***/ "./app/frontend/reducers/items_reducer.js":
+/*!************************************************!*\
+  !*** ./app/frontend/reducers/items_reducer.js ***!
+  \************************************************/
+/*! exports provided: itemsReducer */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "itemsReducer", function() { return itemsReducer; });
+/* harmony import */ var _actions_pokemon_actions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../actions/pokemon_actions */ "./app/frontend/actions/pokemon_actions.js");
+
+var itemsReducer = function itemsReducer() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  var action = arguments.length > 1 ? arguments[1] : undefined;
+
+  switch (action.type) {
+    case _actions_pokemon_actions__WEBPACK_IMPORTED_MODULE_0__["RECEIVE_POKEMON"]:
+      return action.pokemon.items;
+
+    default:
+      return state;
+  }
+};
 
 /***/ }),
 
